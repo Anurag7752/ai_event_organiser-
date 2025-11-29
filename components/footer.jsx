@@ -1,0 +1,34 @@
+import { Instagram, mail, LinkedIn, Github } from "lucide-react";
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer className="border-t border-gray-800/50 py-8 px-6 max-w-7xl mx-auto flex-col md:flex-row items-center justify-between gap-4">
+      <div className="flex items-center gap-6 text-sm text-gray-400">
+        Made with ❤️ by Anurag kumar
+      </div>
+
+      <div className="flex gap-4 items-center">
+        <a
+          href="https://www.instagram.com/_anurag_8434/"
+          className="text-gray-400"
+        >
+          <Instagram className="w-5 h-5" />
+        </a>
+
+        <a href="https://github.com/Anurag7752" className="text-gray-400">
+          <Github className="w-5 h-5" />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/anuragkumar73/"
+          className="text-gray-400"
+        >
+          <LinkedIn className="w-5 h-5" />
+        </a>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
